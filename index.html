@@ -4,56 +4,46 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Carlos Arias">
-		<title>Insert Friends Page</title>
-		<link href="http://leia.cs.spu.edu/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<script type="text/javascript" src="requests.js"></script>
+		<meta name="author" content="Nick Zamora">
+		<title>Welcome Page</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script type="text/javascript" src="scripts/requests.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
 	</head>
 	<body>
-		<div class="container">
-            <h2>Friends Operations</h2>
-            <div class="btn-group">
-                <a class="btn btn-primary" href="getAll.html" role="button">Get All Friends</a>
-                <a class="btn btn-primary" href="insert.html" role="button">Add a Friend</a>
-                <a class="btn btn-primary" href="readByID.html" role="button">Find a Friend by ID</a>
-                <a class="btn btn-primary" href="readByName.html" role="button">Find a Friend by Name</a>
-                <a class="btn btn-primary" href="update.html" role="button">Update a Friend by ID</a>
-                <a class="btn btn-primary" href="delete.html" role="button">Delete a Friend by ID</a>
-            </div>
+		<div id="headerContent">
+			<img src="images/n_sharefaith_logo3.png">
+			<div>Welcome</div>
+			<div>Check out our features and fill out our newsletter submission to get the latest coming from sharefaith!</div>
+			<button type="button" href="data/report" class="btn btn-primary">DOWNLOAD FREE REPORT</button>
 		</div>
-					<div class="container">
-						<h1>Insert Friend</h1>
-						<form>
-							<div class="form-group">
-								<label for="birthdate">Birth Date:</label>
-								<input type="string" class="form-control" id="birthdate" name="birthdate">
-							</div>
 
-							<div class="form-group">
-								<label for="fName">First Name:</label>
-								<input type="string" class="form-control" id="fName" name="fName">
-							</div>
+		<div id="middleContent">
+			<p>New Blog Articles</p>
+			<p>Don't forget to check out our latset articles where we get more in depth on how you can grow your church</p>
+		</div>
 
-							<div class="form-group">
-								<label for="lName">Last Name:</label>
-								<input type="string" class="form-control" id="lName" name="lName">
-							</div>
+		<div id="blogPosts" class="container">
+			
+		</div>
 
-							<div class="form-group">
-								<label for="gender">Gender:</label>
-								<input type="string" class="form-control" id="gender" name="gender">
-							</div>
-
-							<div class="form-group">
-								<label for="phone">Phone:</label>
-								<input type="string" class="form-control" id="phone" name="phone">
-							</div>
-
-
-						</form>
-						<button type="button" class="btn btn-primary form-control" onclick="insertFriend()">Submit Insertion</button>
-
+		<div id="footerContainer">
+			<div id="footerForm">
+				<form>
+					<div class="form-group">
+						<input type="string" class="form-control" id="name" placeholder="Name">
 					</div>
-					<div class="jumbotron" id="output"> </div>
+
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+					</div>
+				</form>
+				<button type="button" class="btn btn-primary form-control">Subscribe now</button>
+			</div>
+
+			<div id="footerLinks">
+				
+			</div>
+		</div>
 	</body>
 </html>
