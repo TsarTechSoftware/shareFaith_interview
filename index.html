@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Carlos Arias">
+		<title>Insert Friends Page</title>
+		<link href="http://leia.cs.spu.edu/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="requests.js"></script>
+	</head>
+	<body>
+		<div class="container">
+            <h2>Friends Operations</h2>
+            <div class="btn-group">
+                <a class="btn btn-primary" href="getAll.html" role="button">Get All Friends</a>
+                <a class="btn btn-primary" href="insert.html" role="button">Add a Friend</a>
+                <a class="btn btn-primary" href="readByID.html" role="button">Find a Friend by ID</a>
+                <a class="btn btn-primary" href="readByName.html" role="button">Find a Friend by Name</a>
+                <a class="btn btn-primary" href="update.html" role="button">Update a Friend by ID</a>
+                <a class="btn btn-primary" href="delete.html" role="button">Delete a Friend by ID</a>
+            </div>
+		</div>
+					<div class="container">
+						<h1>Insert Friend</h1>
+						<form>
+							<div class="form-group">
+								<label for="birthdate">Birth Date:</label>
+								<input type="string" class="form-control" id="birthdate" name="birthdate">
+							</div>
+
+							<div class="form-group">
+								<label for="fName">First Name:</label>
+								<input type="string" class="form-control" id="fName" name="fName">
+							</div>
+
+							<div class="form-group">
+								<label for="lName">Last Name:</label>
+								<input type="string" class="form-control" id="lName" name="lName">
+							</div>
+
+							<div class="form-group">
+								<label for="gender">Gender:</label>
+								<input type="string" class="form-control" id="gender" name="gender">
+							</div>
+
+							<div class="form-group">
+								<label for="phone">Phone:</label>
+								<input type="string" class="form-control" id="phone" name="phone">
+							</div>
+
+
+						</form>
+						<button type="button" class="btn btn-primary form-control" onclick="insertFriend()">Submit Insertion</button>
+
+					</div>
+					<div class="jumbotron" id="output"> </div>
+	</body>
+</html>
