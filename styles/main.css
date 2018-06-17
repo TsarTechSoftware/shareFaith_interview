@@ -26,12 +26,7 @@
 
 #footerContainer{
 	background-color: black;
-}
-
-#footerForm{
-	max-width: 280px;
-	margin: 0px 0px 0px 14%;
-	padding: 70px 0;
+	text-align: center;
 }
 
 a:link, a:visited {
@@ -39,9 +34,14 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-#footerLinks{
-	float: right;
+#footerForm{
+	display: inline-block;
 	max-width: 280px;
-	margin: 0px 30% 0px 0px;
-	padding: 70px 0;
+	padding: 70px 70px 70px 0px;
+}
+
+#footerLinks{
+	display: inline-block;
+	max-width: 280px;
+	padding: 70px 0px 70px 100px;
 }
