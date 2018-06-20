@@ -20,7 +20,7 @@ $.ajax({
     	//var outers = document.getElementsByClassName("posts");
     	//outers.style.width = '100%';
     	//outers.style.height = 'auto';
-    	//document.getElementsByClassName("innerPosts").style.padding = '3% 0%';
+    	document.getElementsByClassName("innerPosts").style.padding = '3% 0%';
     	//document.getElementsByClassName("postText").style.marginLeft = '0px';
     	//document.getElementsByClassName("blogImages").style.cssFloat = 'none';
 	}
