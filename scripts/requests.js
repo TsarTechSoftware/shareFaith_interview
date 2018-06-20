@@ -16,7 +16,8 @@ $.ajax({
 	}
 
 	document.getElementById("blogPosts").innerHTML = response;
-	
+
+	$("#blogPosts").fadeIn(1000);
 
 	}
 });
