@@ -8,7 +8,7 @@ $.ajax({
 		console.log(data);
 		articles = data;
 	for(var i = 0; i<3; i++){
-	response+='<div class=\"posts\">\n'+
+	response+='<div id=\"posts\">\n'+
 	'<div class=\"text-secondary innerPosts\">\n' +
 	'<img src=\"' + articles["articles"][i]["photo"] + '\" id=\"blogImages\">\n' +
 	'<div class=\"postText\"><h5 class=\"text-primary\">' + articles["articles"][i]["header"] + 
