@@ -10,41 +10,23 @@
   .always(function() {
     console.log( "complete" );
   });*/
-var articles = $.ajax({
+var articles;
+var response = '';
+$.ajax({
 	type: 'GET',
-	url: '54.200.29.191/data/articleData.json',
+	url: 'data/articleData.json',
 	dataType: 'json',
 	success: function(data){
 		console.log(data);
+		articles = data;
 	}
 });
-var response = "";
-var counter = 0;
-for(i in articles["articles"]){
-	response+='<div><img src="' + i.photo + '">' +
-	'<div>' + i.header + '</div>' +
-	'<div>' + i.description + '</div>' +
+$(document).ready(function(){
+for(var i = 0; i<3; i++){
+	response+='<div><img src="' + articles["articles"][i]["photo"] + '"</div>\n' +
+	'<div>' + articles["articles"][i]["header"] + '</div>\n' +
+	'<div>' + articles["articles"][i]["description"] + '</div>\n' +
 	'</div>';
-	counter += 1;
-	if(counter == 2){
-		break;
-	}
-}/*{"articles": [
-		{
-			"photo":"images/article1.jpg",
-			"header":"The must-dos for church preperation",
-			"description":"How to get 10 times more organized leading up to Sunday"
-		},
-		{
-			"photo":"images/article2.jpg",
-			"header":"Get to see the top 10 mistakes you're making",
-			"description":"How technology is changing the church world! And how you are being left behind."
-		},
-		{
-			"photo":"images/article3.jpg",
-			"header":"Find out what other churches are doing",
-			"description":"How to get your church to thrive in the middle of nowhere.... and more!"
-		}
-	]
-}*/
+}
 document.getElementById("blogPosts").innerHTML = response;
+});
