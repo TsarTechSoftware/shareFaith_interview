@@ -7,10 +7,26 @@
 		<meta name="author" content="Nick Zamora">
 		<title>Welcome Page</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-		<script type="text/javascript" src="scripts/requests.js"></script>
+		<script type="text/javascript" src="articleData.json"></script>
 		<link rel="stylesheet" href="styles/main.css">
 	</head>
 	<body>
+		<script type="text/javascript">
+			var articles = JSON.parse(articleData);
+			var response = "";
+			var counter = 0;
+			for(i in articles["articles"]){
+				response+='<div><img src="' + i.photo + '">' +
+				'<div>' + i.header + '</div>' +
+				'<div>' + i.description + '</div>' +
+				'</div>';
+				counter += 1;
+				if(counter == 2){
+					break;
+				}
+			}
+			document.getElementById("blogPosts").innerHTML = response;
+		</script>
 		<div class="container">
 			<div id="headerContent">
 				<img src="images/n_sharefaith_logo3.png" id="shareFaithLogo" class="sep">
