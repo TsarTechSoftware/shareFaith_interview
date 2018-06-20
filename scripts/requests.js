@@ -10,7 +10,7 @@ $.ajax({
 	for(var i = 0; i<3; i++){
 	response+='<div class=\"posts\">\n'+
 	'<div class=\"text-secondary innerPosts\">\n' +
-	'<img src=\"' + articles["articles"][i]["photo"] + '\" id=\"blogImages\">\n' +
+	'<img src=\"' + articles["articles"][i]["photo"] + '\" class=\"blogImages\">\n' +
 	'<div class=\"postText\"><h5 class=\"text-primary\">' + articles["articles"][i]["header"] + 
 	'</h5>\n' + articles["articles"][i]["description"] + '</div></div></div>';
 	}
@@ -23,6 +23,7 @@ $.ajax({
     	outers.style.height = 'auto';
     	document.getElementsByClassName("innerPosts").style.padding = '3% 0%';
     	document.getElementsByClassName("innerPosts").style.margin = 0;
+    	document.getElementsByClassName("blogImages").style.float = 'none';
 	}
 
 	}
