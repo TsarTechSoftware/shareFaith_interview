@@ -23,7 +23,7 @@ $.ajax({
     	outers.style.height = 'auto';
     	document.getElementsByClassName("innerPosts").style.padding = '3% 0%';
     	document.getElementsByClassName("postText").style.marginLeft = '0px';
-    	document.getElementsByClassName("blogImages").style.float = 'right';
+    	document.getElementsByClassName("blogImages").style.cssFloat = 'right';
 	}
 
 	}
