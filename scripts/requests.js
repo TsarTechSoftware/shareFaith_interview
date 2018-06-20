@@ -35,6 +35,29 @@ $.ajax({
 });
 });
 
+function popUp() { 
+	window.open('https://www.youtube.com/watch?v=YWeqHMLT27o','pop',"height=590,width=450,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=auto,resizable=yes,copyhistory=no"); 
+}
+
+(function($) {
+    $(document).ready(function(){
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 250) {
+                $('#scroll').fadeIn(300);
+            } else {
+                $('#scroll').fadeOut(300);
+            }
+        });
+ 
+        $('#scroll').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+ 
+    });
+})(jQuery);
+
 
 // This function doesn't work but I thought I would demonstrate how I would go about 
 // submitting an email recipient to a database. I hadn't the time to setup a database.
