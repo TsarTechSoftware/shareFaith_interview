@@ -24,6 +24,28 @@
 	text-align: center;
 }
 
+.posts{
+	margin: 18px auto;
+	width: 65%;
+	height: 200px;
+	border: 1px solid grey;
+	padding-bottom: 20px;
+}
+
+.innerPosts{
+	padding: 3% 8%;
+}
+
+.postText{
+	margin-left: 228px;
+}
+
+#blogImages{
+	height: 118px;
+	width: 202px;
+	float: left;
+}
+
 #footerContainer{
 	background-color: black;
 	text-align: center;

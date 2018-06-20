@@ -8,11 +8,11 @@ $.ajax({
 		console.log(data);
 		articles = data;
 	for(var i = 0; i<3; i++){
-	response+='<div>\n'+
-	'<div><img src=\"' + articles["articles"][i]["photo"] + '\"></div>\n' +
-	'<div>' + articles["articles"][i]["header"] + '</div>\n' +
-	'<div>' + articles["articles"][i]["description"] + '</div>\n' +
-	'</div>';
+	response+='<div class=\"posts\">\n'+
+	'<div class=\"text-secondary innerPosts\">\n' +
+	'<img src=\"' + articles["articles"][i]["photo"] + '\" id=\"blogImages\">\n' +
+	'<div class=\"postText\"><h5 class=\"text-primary\">' + articles["articles"][i]["header"] + 
+	'</h5>\n' + articles["articles"][i]["description"] + '</div></div></div>';
 	}
 	document.getElementById("blogPosts").innerHTML = response;
 
