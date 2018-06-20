@@ -24,6 +24,7 @@
 	text-align: center;
 }
 
+
 .posts{
 	margin: 18px auto;
 	width: 65%;
@@ -37,7 +38,7 @@
 }
 
 .postText{
-	margin-left: 228px;
+	margin-left: 36%;
 }
 
 #blogImages{
@@ -45,6 +46,7 @@
 	width: 202px;
 	float: left;
 }
+
 
 #footerContainer{
 	background-color: black;
