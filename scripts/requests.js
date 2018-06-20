@@ -14,10 +14,9 @@ $.ajax({
 	'<div class=\"postText\"><h5 class=\"text-primary\">' + articles["articles"][i]["header"] + 
 	'</h5>\n' + articles["articles"][i]["description"] + '</div></div></div>';
 	}
-
+	$("#blogPosts").hide(1000);
 	document.getElementById("blogPosts").innerHTML = response;
-
-	$("#blogPosts").fadeIn(1000);
+	$("#blogPosts").fadeIn(2000);
 
 	}
 });
