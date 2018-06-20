@@ -12,10 +12,10 @@
   });*/
 var articles = $.ajax({
 	type: 'GET',
-	url: 'data/articleData.json',
+	url: '54.200.29.191/data/articleData.json',
 	dataType: 'json',
 	success: function(data){
-		console.log("Success");
+		console.log(data);
 	}
 });
 var response = "";
