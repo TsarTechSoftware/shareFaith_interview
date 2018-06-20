@@ -1,21 +1,19 @@
 {
-	"articles":{
-		"articleOne":{
+	"articles": [
+		{
 			"photo":"images/article1.jpg",
 			"header":"The must-dos for church preperation",
 			"description":"How to get 10 times more organized leading up to Sunday"
 		},
-
-		"articleTwo":{
+		{
 			"photo":"images/article2.jpg",
 			"header":"Get to see the top 10 mistakes you're making",
 			"description":"How technology is changing the church world! And how you are being left behind."
 		},
-
-		"articleThree":{
+		{
 			"photo":"images/article3.jpg",
 			"header":"Find out what other churches are doing",
 			"description":"How to get your church to thrive in the middle of nowhere.... and more!"
 		}
-	}
+	]
 }
